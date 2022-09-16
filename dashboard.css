@@ -9,7 +9,7 @@ body {
   background-color: white;
 }
 
-/* ini bagian header */
+/*------------------ini bagian header----------------------*/
 
 .header {
   background-color: aqua;
@@ -22,11 +22,11 @@ body {
 .logo-header {
 }
 
-/* tambahan header*/
+/*-------------------tambahan header----------------------*/
 .ext-header {
 }
 
-/* ini bagian isi */
+/*-------------------ini bagian isi----------------------*/
 
 .body {
   width: 100%;
@@ -35,19 +35,28 @@ body {
   position: absolute;
   display: flex;
 }
-
-/* INI KONTEN CUY */
-
 .content {
   border: 10px solid purple;
   width: 95%;
   display: inline;
 }
-.konten {
+.leaflet {
   justify-content: center;
 }
+.container-summary{
+  border: 5px solid red;
+  display: flex;
+}
+.container-data{
+  width: 50%;
+  height: 150px;
+  margin: 25px 15px;
+  padding: 25px 15px;
+  border: 5px solid black;
+}
 
-/* NAVBAR INI */
+/*-----------------NAVBAR INI-----------------------------*/
+
 .navbar {
   width: 5%;
   height: 100%;
