@@ -5,12 +5,14 @@
 }
 
 
-body {
-  background-color: white;
+body{
+  background-color: #080710;
+  background-image: url("./attach/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* ini bagian header */
-
+/*------------------ini bagian header----------------------*/
 .header {
   background-color: aqua;
   height: 10%;
@@ -18,15 +20,15 @@ body {
   display: flex;
 }
 
-/* logo header */
+/*----------------------------logo header------------------*/
 .logo-header {
 }
 
-/* tambahan header*/
+/*-------------------tambahan header----------------------*/
 .ext-header {
 }
 
-/* ini bagian isi */
+/*-------------------ini bagian isi----------------------*/
 
 .body {
   width: 100%;
@@ -47,12 +49,12 @@ body {
   justify-content: center;
 }
 
-/* NAVBAR INI */
+/*-----------------NAVBAR INI-----------------------------*/
 .navbar {
-  width: 5%;
+  width: 8%;
   height: 100%;
   display: inline;
-  border: 5px solid salmon;
+  background-color: black;
   padding-top: 15px;
 }
 .menu-navbar {
@@ -61,11 +63,10 @@ body {
   margin: 5px 5px;
   text-align: left;
   background-color: black;
-  opacity: 0.4;
-  text-align: left;
+  opacity: 0.6;
 }
 .menu-navbar:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .menu-navbar:active {
   opacity: 1;
@@ -76,4 +77,6 @@ body {
   font-size: 12px;
   color: white;
   display: block;
+  border: 3px solid gray;
+  display: inline-flex;
 }
