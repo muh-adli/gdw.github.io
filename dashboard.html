@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </head>
+
 
 <body>
   <div class="header">
@@ -22,20 +25,20 @@
   <div class="body">
     <div class="navbar">
       <button class="menu-navbar" onclick="location.href='./homepage.html'">
-        <img src="/attach/Logo.png" alt="Total Data" width="25" height="25">
+        <img src="./attach/Logo.png" alt="Total Data" width="25" height="25">
         <p>Homepage</p></button>
       <button class="menu-navbar" onclick="location.href='./dashboard.html'">
-        <img src="/attach/homework.png" alt="Total Data" width="25" height="25">
+        <img src="./attach/homework.png" alt="Total Data" width="25" height="25">
         <p>Dashboard</p></button>
       <button class="menu-navbar" onclick="location.href='#'">
-        <img src="/attach/list.png" alt="Total Data" width="25" height="25">
+        <img src="./attach/list.png" alt="Total Data" width="25" height="25">
         <p>File Explorer</p></button>
-      <button class="menu-navbar" onclick="location.href='#'">
-        <img src="/attach/team.png" alt="Total Data" width="25" height="25">
+      <button class="menu-navbar" onclick="location.href='./about-us.html'">
+        <img src="./attach/team.png" alt="Total Data" width="25" height="25">
         <p>About Us</p></button>
     </div>
     <div class="content">
-      <div class="leaflet">ini leaflet</div>
+      <div id="map" ></div>
       <div class="container-summary">
         <div class="container-data">
           <div class="data">
@@ -53,4 +56,13 @@
     </div>
   </div>
 </body>
+
+<script>
+  var map = L.map('map').setView([-5.363161489579897, 105.24211861161204], 18);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+}).addTo(map);
+</script>
 </html>

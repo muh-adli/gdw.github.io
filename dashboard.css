@@ -125,3 +125,8 @@ display: block;
 .menu-navbar img {
   pad: 10px;
 }
+
+#map {
+  height: 80%;
+  width: 100%;
+}
